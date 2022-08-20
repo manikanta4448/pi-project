@@ -11,6 +11,7 @@ pipeline {
                 // this step is required to make sure the script
                 // can be executed directly in a shell
                 sh('chmod +x ./algorithm.sh')
+                echo "permission changed to executable"
             }
         }
         stage('Build') {
