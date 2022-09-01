@@ -20,6 +20,7 @@ pipeline {
                 sh('./algorithm.sh')
 
                 // this step archives the report
+                // this step also archives report
                 archiveArtifacts allowEmptyArchive: true,
                     artifacts: '*.txt',
                     fingerprint: true,
